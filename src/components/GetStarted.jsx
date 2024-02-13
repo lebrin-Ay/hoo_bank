@@ -1,0 +1,28 @@
+import styles from "../style";
+import { arrowUp } from "../assets";
+
+const GetStarted = () => {
+  return (
+    <div
+      className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[.125rem] cursor-pointer hover:scale-90`}>
+      <div
+        className={`${styles.flexCenter} flex-col bg-primary w-full h-full rounded-full`}>
+        <div className={`${styles.flexStart} flex-row`}>
+          <p className="font-poppins text-lg font-medium leading-6 mr-2">
+            <span className="text-gradient">Get</span>
+          </p>
+          <img
+            src={arrowUp}
+            alt="Arrow"
+            className="h-[23px] w-[23px] object-contain"
+            />
+        </div>
+        <p className="font-poppins text-lg font-medium leading-6">
+          <span className="text-gradient">Started</span>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default GetStarted;
